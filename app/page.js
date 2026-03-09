@@ -11,6 +11,7 @@ import Testimonials from "../components/sections/Testimonials";
 import Reservation from "../components/sections/Reservation";
 import Contact from "../components/sections/Contact";
 import Footer from "../components/ui/Footer";
+import ScrollToTop from "../components/ui/ScrollToTop";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +34,7 @@ export default function Home() {
             <Contact />
           </main>
           <Footer />
+          <ScrollToTop />
         </>
       )}
     </>
