@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Reservation Inquiry - Lyraa</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #080808; font-family: 'Segoe UI', Arial, sans-serif;">
+  <div style="max-width: 600px; margin: 40px auto; background-color: #0F0F0F; border: 1px solid rgba(212, 168, 83, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.8);">
+    
+    <!-- Header Decor -->
+    <div style="height: 4px; background: linear-gradient(90deg, #D4A853, #141414, #D4A853);"></div>
+
+    <!-- Header -->
+    <div style="padding: 50px 20px; text-align: center; background-color: #080808; border-bottom: 1px solid rgba(212, 168, 83, 0.1);">
+      <h1 style="color: #D4A853; margin: 0; font-size: 32px; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 300;">LYRAA</h1>
+      <div style="width: 40px; height: 1px; background: #D4A853; margin: 20px auto;"></div>
+      <p style="color: #8A7E6E; margin: 0; font-style: italic; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase;">New Reservation Inquiry</p>
+    </div>
+
+    <!-- Main Content -->
+    <div style="padding: 60px 50px;">
+      <h2 style="color: #F5F0E8; font-size: 20px; font-weight: 400; margin-bottom: 40px; text-align: center; letter-spacing: 0.05em; font-family: 'Times New Roman', Times, serif; font-style: italic;">A new guest is requesting a table.</h2>
+      
+      <div style="background-color: #141414; border: 1px solid rgba(212, 168, 83, 0.1); padding: 40px; border-radius: 4px;">
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr>
+            <td style="padding: 18px 0; border-bottom: 1px solid rgba(212, 168, 83, 0.08);">
+              <span style="color: #D4A853; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 6px; font-weight: bold;">Guest Name</span>
+              <span style="color: #F5F0E8; font-size: 18px; font-weight: 400;">{{from_name}}</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 18px 0; border-bottom: 1px solid rgba(212, 168, 83, 0.08);">
+              <span style="color: #D4A853; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 6px; font-weight: bold;">Dining Date</span>
+              <span style="color: #F5F0E8; font-size: 18px; font-weight: 400;">{{date}}</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 18px 0; border-bottom: 1px solid rgba(212, 168, 83, 0.08);">
+              <span style="color: #D4A853; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 6px; font-weight: bold;">Preferred Time</span>
+              <span style="color: #F5F0E8; font-size: 18px; font-weight: 400;">{{time}}</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 18px 0; border-bottom: 1px solid rgba(212, 168, 83, 0.08);">
+              <span style="color: #D4A853; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 6px; font-weight: bold;">Party Size</span>
+              <span style="color: #F5F0E8; font-size: 18px; font-weight: 400;">{{guests}} Persons</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 18px 0; border-bottom: 1px solid rgba(212, 168, 83, 0.08);">
+              <span style="color: #D4A853; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 6px; font-weight: bold;">Contact Details</span>
+              <span style="color: #F5F0E8; font-size: 16px; font-weight: 400; display: block;">{{phone}}</span>
+              <span style="color: #8A7E6E; font-size: 14px; font-weight: 400; margin-top: 4px; display: block;">{{from_email}}</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Special Requests -->
+      <div style="margin-top: 50px; border-left: 3px solid #D4A853; padding: 25px; background-color: rgba(212, 168, 83, 0.03);">
+        <span style="color: #D4A853; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 12px; font-weight: bold;">Special Requests:</span>
+        <p style="color: #C4B8A8; margin: 0; font-style: italic; font-size: 15px; line-height: 1.8;">"{{requests}}"</p>
+      </div>
+
+      <!-- Call to Action -->
+      <div style="margin-top: 60px; text-align: center;">
+        <p style="color: #8A7E6E; font-size: 13px; margin-bottom: 30px; font-style: italic;">Please review this request and contact the guest to confirm within 2 hours.</p>
+        <a href="mailto:{{from_email}}" style="display: inline-block; padding: 18px 45px; background: linear-gradient(135deg, #D4A853, #B8922E); color: #080808; text-decoration: none; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; border-radius: 0; box-shadow: 0 10px 30px rgba(212, 168, 83, 0.3);">Respond to Guest</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #080808; padding: 40px; text-align: center; border-top: 1px solid rgba(212, 168, 83, 0.05);">
+      <p style="color: #D4A853; font-size: 15px; letter-spacing: 0.3em; margin-bottom: 20px;">LYRAA</p>
+      <div style="color: #444; font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em;">
+        Internal Notification System — Management Only
+      </div>
+      <p style="color: #333; font-size: 9px; margin-top: 25px; line-height: 1.6; letter-spacing: 0.05em;">
+        123 Golden Avenue, Dhaka, Bangladesh<br>
+        © 2026 Lyraa Fine Dining. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
