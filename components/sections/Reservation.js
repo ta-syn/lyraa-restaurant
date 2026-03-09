@@ -78,6 +78,15 @@ export default function Reservation() {
       const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
       const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
+      // DEBUG: Which keys are missing?
+      if (!serviceId || !templateId || !publicKey) {
+        console.warn("EmailJS Configuration Missing:", {
+          hasServiceId: !!serviceId,
+          hasTemplateId: !!templateId,
+          hasPublicKey: !!publicKey
+        });
+      }
+
       if (serviceId && templateId && publicKey && serviceId !== 'your_service_id_here') {
         await emailjs.send(
           serviceId,
