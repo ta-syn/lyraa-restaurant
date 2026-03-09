@@ -6,6 +6,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer-Motion-purple?logo=framer)](https://www.framer.com/motion/)
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)]()
+[![GitHub](https://img.shields.io/badge/GitHub-ta--syn%2Flyraa--restaurant-181717?logo=github)](https://github.com/ta-syn/lyraa-restaurant)
 
 ---
 
@@ -40,8 +41,8 @@
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/ta-syn/lyraa.git
-cd lyraa
+git clone https://github.com/ta-syn/lyraa-restaurant.git
+cd lyraa-restaurant
 ```
 
 ### 2. Install dependencies
@@ -112,7 +113,7 @@ lyraa/
 
 1. Push your code to GitHub
 2. Go to [vercel.com/new](https://vercel.com/new)
-3. Import the `ta-syn/lyraa` repository
+3. Import the [`ta-syn/lyraa-restaurant`](https://github.com/ta-syn/lyraa-restaurant) repository
 4. Add your environment variables in the Vercel dashboard
 5. Click **Deploy** — done! ✅
 
@@ -149,5 +150,5 @@ This project is proprietary. Unauthorized copying or redistribution is prohibite
 
 <div align="center">
   <p>Crafted with ♥ by <strong>Nishan</strong> for <strong>Lyraa Fine Dining</strong></p>
-  <a href="https://github.com/ta-syn/lyraa">⭐ Star this repo if you like it!</a>
+  <a href="https://github.com/ta-syn/lyraa-restaurant">⭐ Star this repo if you like it!</a>
 </div>

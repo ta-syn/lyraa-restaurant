@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { motion, AnimatePresence } from "framer-motion";
 import { RESTAURANT } from "../../lib/data";
-import { FiCalendar, FiClock, FiUsers, FiCheckCircle } from "react-icons/fi";
+import { FiCalendar, FiCheckCircle } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
 
 const TIME_SLOTS = [
@@ -405,7 +405,7 @@ export default function Reservation() {
                 <a href={`tel:${RESTAURANT.phone}`} className="btn-outline-gold flex-1 py-3 text-[10px] md:text-[11px] flex items-center justify-center gap-2">
                   <span>📞 Call Us</span>
                 </a>
-                <a href="#" className="btn-outline-gold flex-1 py-3 text-[10px] md:text-[11px] flex items-center justify-center gap-2">
+                <a href={`https://wa.me/${RESTAURANT.phone.replace(/[^0-9]/g, "")}`} target="_blank" rel="noopener noreferrer" className="btn-outline-gold flex-1 py-3 text-[10px] md:text-[11px] flex items-center justify-center gap-2">
                   <span>💬 WhatsApp</span>
                 </a>
               </div>

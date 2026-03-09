@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { RESTAURANT } from "../../lib/data";
 import { FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa";
 

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { RESTAURANT } from "../../lib/data";
 import { HiOutlineMenuAlt4, HiX } from "react-icons/hi";
 
 const NAV_LINKS = [

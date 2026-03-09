@@ -112,7 +112,9 @@ export default function Contact() {
 
               {/* WhatsApp */}
               <a 
-                href="#"
+                href={`https://wa.me/${RESTAURANT.phone.replace(/[^0-9]/g, "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 group hover:translate-x-1 transition-all"
                 aria-label="WhatsApp chat"
               >

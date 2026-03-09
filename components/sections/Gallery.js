@@ -14,14 +14,10 @@ export default function Gallery() {
   const openLightbox = (index) => {
     setLightboxIndex(index);
     setLightboxOpen(true);
-    // eslint-disable-next-line
-    document.body.style.overflow = "hidden";
   };
 
   const closeLightbox = () => {
     setLightboxOpen(false);
-    // eslint-disable-next-line
-    document.body.style.overflow = "unset";
   };
 
   const nextImage = (e) => {
@@ -37,6 +33,12 @@ export default function Gallery() {
   const handleImgError = (id) => {
     setImgErrors(prev => ({ ...prev, [id]: true }));
   };
+
+  // Lock body scroll when lightbox is open (correct React pattern)
+  useEffect(() => {
+    document.body.style.overflow = lightboxOpen ? "hidden" : "unset";
+    return () => { document.body.style.overflow = "unset"; };
+  }, [lightboxOpen]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {

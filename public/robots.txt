@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Sitemap: https://lyraa-six.vercel.app/sitemap.xml
+Sitemap: https://lyraa-restaurant.vercel.app/sitemap.xml
