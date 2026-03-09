@@ -2,6 +2,7 @@ import "./globals.css";
 import { RESTAURANT } from "../lib/data";
 
 export const metadata = {
+  metadataBase: new URL("https://lyraa-six.vercel.app"),
   title: {
     template: "%s | Lyraa Fine Dining",
     default: "Lyraa | Fine Dining Restaurant — Reserve Your Table Today"
